@@ -1,0 +1,50 @@
+.NavContainer {
+  height: 70px;
+  width: 100%;
+  background: #F3F7FD;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 1px solid #F6F6F9;
+}
+.title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.title h1 {
+  font-size: 1.7rem;
+}
+.input {
+  position: relative;
+  display: flex;
+  gap: 40px;
+}
+.input input {
+  padding-left: 40px;
+  width: 300px;
+  height: 40px;
+  box-shadow: 0px 1px 2px 0px #1018280d;
+  border: 1px solid #ececf2;
+  outline: none;
+  border-radius: 6px;
+}
+.input button{
+    height: 40px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
+    background: none;
+    border-radius: 6px;
+    color: #000;
+    gap: 5px;
+    cursor: pointer;
+}
+.search {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
