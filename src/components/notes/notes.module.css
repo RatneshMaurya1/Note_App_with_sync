@@ -1,0 +1,118 @@
+.accordion {
+  width: 80%;
+  /* max-width: 400px; */
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Accordion Item Styles */
+.accordionItem {
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  position: relative;
+}
+.accordionItem > span {
+  position: absolute;
+  top: 18px;
+  right: 10px;
+}
+
+/* Accordion Title Button */
+.accordionTitle {
+  width: 100%;
+  padding: 15px;
+  text-align: left;
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+/* 
+.accordionTitle:hover {
+  background-color: #e0e0e0;
+} */
+
+.accordionTitle[aria-expanded="true"] {
+  background-color: #d0d0d0;
+}
+
+.accordionContent {
+  padding: 15px;
+  background-color: #fafafa;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.accordion p {
+  font-size: 16px;
+  color: #666;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+.buttons button:nth-child(1) {
+     text-align: center;
+    height: 30px;
+    width: 55px;
+    background: blue;
+    color: #fff;
+    border: none;
+    font-size: 0.7rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.buttons button:nth-child(2) {
+    text-align: center;
+    height: 30px;
+    width: 55px;
+    background: green;
+    color: #fff;
+    border: none;
+    font-size: 0.7rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.buttons button:nth-child(3) {
+    text-align: center;
+    height: 30px;
+    width: 55px;
+    background: red;
+    color: #fff;
+    border: none;
+    font-size: 0.7rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.loader{
+    height: 40px;
+    width: 40px;
+    border: 4px solid rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    border-top:4px solid blue;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    to{
+        transform: rotate(360deg);
+    }
+}
+.loaderContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+}
